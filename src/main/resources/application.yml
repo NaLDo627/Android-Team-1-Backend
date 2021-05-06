@@ -2,7 +2,7 @@ spring:
     # JPA
     jpa:
       hibernate:
-        ddl-auto: none
+        ddl-auto: validate
       show_sql: true
       properties:
           hibernate:
@@ -13,7 +13,8 @@ spring:
       secret: 12345678901234567890123456789012
 
     # liquibase
-#    liquibase:
+    liquibase:
+      change-log: classpath:config/liquibase/master.xml
 #        enabled: false
 
 
