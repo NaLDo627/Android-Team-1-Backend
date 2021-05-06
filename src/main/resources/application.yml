@@ -1,0 +1,35 @@
+spring:
+    # JPA
+    jpa:
+      hibernate:
+        ddl-auto: none
+      show_sql: true
+      properties:
+          hibernate:
+            format_sql: true
+
+    # JWT
+    jwt:
+      secret: 12345678901234567890123456789012
+
+    # liquibase
+#    liquibase:
+#        enabled: false
+
+
+# logging
+logging:
+    level:
+        org:
+          hibernate:
+                type:
+                  descriptor:
+                          sql: trace
+
+# server
+server:
+  error:
+    whitelabel:
+          enabled: false
+
+

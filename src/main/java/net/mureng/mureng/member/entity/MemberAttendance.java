@@ -20,7 +20,7 @@ public class MemberAttendance {
     private Long memberId;
 
     @Column(name = "attendance_count", nullable = false)
-    private long attendanceCount;
+    private int attendanceCount;
 
     @Column(name = "last_attendance_date", nullable = false)
     @Builder.Default

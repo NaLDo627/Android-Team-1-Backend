@@ -23,7 +23,7 @@ public class Member {
     private String identifier;
 
     @NotNull
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     private String email;
 
     @Builder.Default
